@@ -3,6 +3,58 @@
 #Instalar WSL y distribución linux, abrir PowerShell como administrador en Windows
 wsl --install
 
+# Actualiza tu distribución antes de instalar algun programa.
+sudo apt update
+sudo apt upgrade
+
+# Estado que se esta 
+wsl --list --verbose
+
+
+# Para instalar OpenDroneMap, se requiere tener instalado los siguientes programas: Git, PYTHON, Pip y Docker
+
+# Verifica si tienes instalado GIT:
+git --versión
+
+# Verifica si tienes instalado PYTHON
+python3 --versión
+
+#Instalar PIP
+sudo apt install python3-pip
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+
+
+git clone https://github.com/OpenDroneMap/WebODM
+cd WebODM
+./webodm.sh start
+
+
+
+
+
+
+git --versión
+
+
+
+
+
+
+
+
+
+
+free -h
+cat /proc/meminfo
+nproc
+lscpu
+
+
+
+
+
 
 
 
